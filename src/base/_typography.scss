@@ -1,0 +1,154 @@
+// Typography
+
+// Base type
+$base-font-size-percentage: 62.5%; // 10px. Allows for base10 rem declarations (i.e., 14px = 1.4rem)
+$base-font-family: 'AG Next Regular', Helvetica, Arial, sans-serif;
+$base-font-weight: normal;
+$base-line-height: 1.3;
+
+// Bold type
+$bold-font-family: 'AG Next Medium' Helvetica, Arial, sans-serif;
+$bold-font-weight: 500;
+
+// Headings
+$heading-font-family: 'Knockout-51', Helvetica, Arial, sans-serif;
+$heading-bold-font-family: 'Knockout-71', Helvetica, Arial, sans-serif;
+$heading-bold-font-weight: $bold-font-weight;
+
+$h1-font-size: 3.4rem;
+$h2-font-size: 2.7rem;
+$h3-font-size: 2.2rem;
+$h4-font-size: 1.8rem;
+$h5-font-size: 1.8rem;
+$h6-font-size: 1.6rem;
+
+$h1-line-height: $base-line-height;
+$h2-line-height: $base-line-height;
+$h3-line-height: $base-line-height;
+$h4-line-height: $base-line-height;
+$h5-line-height: $base-line-height;
+$h6-line-height: $base-line-height;
+
+$heading-font-weight: normal;
+
+
+html {
+  font-family: $base-font-family;
+  font-size: $base-font-size-percentage;
+  line-height: $base-line-height;
+}
+
+// Headings
+h1,
+.size-h1,
+h2,
+.size-h2,
+h3,
+.size-h3,
+h4,
+.size-h4,
+h5,
+.size-h5,
+h6,
+.size-h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: $heading-font-family;
+  font-weight: $heading-font-weight;
+}
+
+h4,
+.size-h4 {
+  @extend .text-uppercase;
+  @extend .heading-bold;
+}
+
+// Body copy
+$text-font-size: 1.4rem;
+$computed-line-height: round($text-font-size * $base-line-height);
+
+p,
+.size-p {
+  margin: 0 0 15px;
+}
+
+// Small copy
+$small-font-size: 1.2rem;
+$small-line-height: 1.16666667;
+
+small,
+.size-small {
+  display: block;
+}
+
+// Typography System Engine
+// The map $typography holds all the variables to create the proper element and utility-class declarations.
+// Each Sass list must be declared in specific order: (font-size, line-height)
+$typography: (
+  h1: ($h1-font-size, $h1-line-height),
+  h2: ($h2-font-size, $h2-line-height),
+  h3: ($h3-font-size, $h3-line-height),
+  h4: ($h4-font-size, $h4-line-height),
+  h5: ($h5-font-size, $h5-line-height),
+  h6: ($h6-font-size, $h6-line-height),
+  p: ($text-font-size, $base-line-height),
+  small: ($small-font-size, $small-line-height)
+);
+
+@each $element, $value in $typography {
+  #{$element},
+  .size-#{$element} {
+    font-size: nth($value, 1);
+    line-height: nth($value, 2);
+  }
+}
+
+@include breakpoint(medium) {
+  $text-font-size: 1.2rem;
+  $small-font-size: 1.0rem;
+
+  html { font-size: 72.5%; }
+
+  p,
+  .size-p { font-size: $text-font-size; }
+
+  small,
+  .size-small { font-size: $small-font-size; }
+}
+
+@include breakpoint(large) {
+  $text-font-size: 1.1rem;
+  $small-font-size: 0.9rem;
+
+  html { font-size: 80%; }
+
+  p,
+  .size-p { font-size: $text-font-size; }
+
+  small,
+  .size-small { font-size: $small-font-size; }
+}
+
+// Utility Classes
+// Bold text – with either the <b> or <strong> tags, or by using a utility class – is used for emphasizing body copy
+// These should *not* be used for headlines
+b,
+strong,
+.text-bold {
+  font-family: $bold-font-family;
+  font-weight: $bold-font-weight;
+}
+
+// This utility class should be used to emphasize headings
+.heading-bold {
+  font-family: $heading-bold-font-family;
+  font-weight: $heading-bold-font-weight;
+}
+
+// Transform text regardless of their original state.
+.text-lowercase {
+  text-transform: lowercase;
+}
+.text-uppercase {
+  text-transform: uppercase;
+}

@@ -1,0 +1,136 @@
+// Global
+
+// $content-width: Controls the maximum width for content
+$content-width: 1200px;
+
+// box-sizing best practice
+// https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+}
+
+body {
+  position: relative;
+  z-index: 1;
+  color: $tertiary10;
+  background-color: $tertiary80;
+}
+
+[role='main'] {
+  position: relative;
+  z-index: 1;
+}
+
+.container {
+  position: relative;
+  z-index: 1;
+  max-width: $content-width;
+  width: 90%;
+
+  &.full-width {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
+// Block-level utility classes
+.block-center {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+// Inline-level utility classes
+.text-right,
+.text-right-small {
+  text-align: right;
+}
+
+.text-center,
+.text-center-small {
+  text-align: center;
+}
+
+.text-left,
+.text-left-small {
+  text-align: left;
+}
+
+@include breakpoint(medium) {
+  .text-right-small,
+  .text-center-small,
+  .text-left-small {
+    text-align: inherit;
+  }
+
+  .text-right-medium {
+    text-align: right;
+  }
+  .text-center-medium {
+    text-align: center;
+  }
+  .text-left-medium {
+    text-align: left;
+  }
+}
+
+@include breakpoint(large) {
+  .text-right-medium,
+  .text-center-medium,
+  .text-left-medium {
+    text-align: inherit;
+  }
+
+  .text-right-large {
+    text-align: right;
+  }
+  .text-center-large {
+    text-align: center;
+  }
+  .text-left-large {
+    text-aign: right;
+  }
+}
+
+// Display utility classes
+// When using responsive display classes, [aria-hidden] *must* be set via JavaScript to its appropriate state
+// http://www.w3.org/TR/wai-aria/states_and_properties#aria-hidden
+
+[aria-hidden='true'],
+.is-hidden,
+.is-hidden-small {
+  display: none;
+}
+
+@include breakpoint(medium) {
+  .is-hidden-small {
+    display: inherit;
+  }
+
+  .is-hidden-medium {
+    display: none;
+  }
+}
+
+@include breakpoint(large) {
+  .is-hidden-medium {
+    display: inherit;
+  }
+
+  .is-hidden-large {
+    display: none;
+  }
+}

@@ -1,0 +1,99 @@
+// Custom Fonts
+// Fonts are decided by Brand
+
+// UNCOMMENT FOR FINAL DEPLOYMENT
+//@font-face {
+//  font-family: 'AG Next Regular';
+//  src: url('assets/fonts/akzidenz/agnextregular-webfont.eot');
+//  src: url('assets/fonts/akzidenz/agnextregular-webfont.eot?#iefix') format('embedded-opentype'),
+//       url('assets/fonts/akzidenz/agnextregular-webfont.woff2') format('woff2'),
+//       url('assets/fonts/akzidenz/agnextregular-webfont.woff') format('woff'),
+//       url('assets/fonts/akzidenz/agnextregular-webfont.ttf') format('truetype'),
+//       url('assets/fonts/akzidenz/agnextregular-webfont.svg#akzidenz-grotesk_next_regulRg') format('svg');
+//  font-weight: normal;
+//  font-style: normal;
+//}
+//
+//@font-face {
+//  font-family: 'AG Next Medium';
+//  src: url('assets/fonts/akzidenz/agnextmedium-webfont.eot');
+//  src: url('assets/fonts/akzidenz/agnextmedium-webfont.eot?#iefix') format('embedded-opentype'),
+//       url('assets/fonts/akzidenz/agnextmedium-webfont.woff2') format('woff2'),
+//       url('assets/fonts/akzidenz/agnextmedium-webfont.woff') format('woff'),
+//       url('assets/fonts/akzidenz/agnextmedium-webfont.ttf') format('truetype'),
+//       url('assets/fonts/akzidenz/agnextmedium-webfont.svg#akzidenz-grotesk_next_regulRg') format('svg');
+//  font-weight: normal;
+//  font-style: normal;
+//}
+//
+//@font-face {
+//  font-family: 'Knockout-51';
+//  src: url('assets/fonts/knockout/knockout-51-webfont.eot');
+//  src: url('assets/fonts/knockout/knockout-51-webfont.eot?#iefix') format('embedded-opentype'),
+//       url('assets/fonts/knockout/knockout-51-webfont.woff2') format('woff2'),
+//       url('assets/fonts/knockout/knockout-51-webfont.woff') format('woff'),
+//       url('assets/fonts/knockout/knockout-51-webfont.ttf') format('truetype'),
+//       url('assets/fonts/knockout/knockout-51-webfont.svg#knockout51_cruiserweight') format('svg');
+//  font-weight: normal;
+//  font-style: normal;
+//}
+//@font-face {
+//  font-family: 'Knockout-71';
+//  src: url('assets/fonts/knockout/knockout-71-webfont.eot');
+//  src: url('assets/fonts/knockout/knockout-71-webfont.eot?#iefix') format('embedded-opentype'),
+//       url('assets/fonts/knockout/knockout-71-webfont.woff2') format('woff2'),
+//       url('assets/fonts/knockout/knockout-71-webfont.woff') format('woff'),
+//       url('assets/fonts/knockout/knockout-71-webfont.ttf') format('truetype'),
+//       url('assets/fonts/knockout/knockout-71-webfont.svg#knockout71_full_middleweight') format('svg');
+//  font-weight: 500;
+//  font-style: normal;
+//}
+
+// FOR PRODUCTION (CODEPEN) ONLY. DELETE FOR FINAL DEPLOYMENT
+@font-face {
+  font-family: 'AG Next Regular';
+  src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/91494/agnextregular-webfont.eot');
+  src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/91494/agnextregular-webfont.eot?#iefix') format('embedded-opentype'),
+       url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/91494/agnextregular-webfont.woff2') format('woff2'),
+       url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/91494/agnextregular-webfont.woff') format('woff'),
+       url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/91494/agnextregular-webfont.ttf') format('truetype'),
+       url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/91494/agnextregular-webfont.svg#akzidenz-grotesk_next_regulRg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'AG Next Medium';
+  src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/91494/agnextmedium-webfont.eot');
+  src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/91494/agnextmedium-webfont.eot?#iefix') format('embedded-opentype'),
+       url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/91494/agnextmedium-webfont.woff2') format('woff2'),
+       url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/91494/agnextmedium-webfont.woff') format('woff'),
+       url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/91494/agnextmedium-webfont.ttf') format('truetype'),
+       url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/91494/agnextmedium-webfont.svg#akzidenz-grotesk_nextmedium') format('svg');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Knockout-51';
+  src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/91494/knockout-51-webfont.eot');
+  src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/91494/knockout-51-webfont.eot?#iefix') format('embedded-opentype'),
+       url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/91494/knockout-51-webfont.woff2') format('woff2'),
+       url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/91494/knockout-51-webfont.woff') format('woff'),
+       url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/91494/knockout-51-webfont.ttf') format('truetype'),
+       url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/91494/knockout-51-webfont.svg#knockout51_middleweight') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Knockout-71';
+  src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/91494/knockout-71-webfont.eot');
+  src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/91494/knockout-71-webfont.eot?#iefix') format('embedded-opentype'),
+       url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/91494/knockout-71-webfont.woff2') format('woff2'),
+       url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/91494/knockout-71-webfont.woff') format('woff'),
+       url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/91494/knockout-71-webfont.ttf') format('truetype'),
+       url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/91494/knockout-71-webfont.svg#knockout71_full_middleweight') format('svg');
+  font-weight: 500;
+  font-style: normal;
+}

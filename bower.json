@@ -1,0 +1,13 @@
+{
+  "name": "primer",
+  "version": "0.0.1",
+  "authors": [
+    "Alexis Cordova <alcordova@stubhub.com>"
+  ],
+  "description": "",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "normalize.css": "~3.0.3"
+  }
+}

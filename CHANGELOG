@@ -1,0 +1,17 @@
+v0.0.2
+  date: 2015-07-09
+  changes:
+    - Added CSS keyframe animations
+    - Added custom @font-face declarations and font files
+    - Added main layout styles
+    - Added typography system
+    - Added base documentation
+    - Added color system
+    - Added custom functions
+    - Added mixins
+    - Added utility documentation
+    - Added vendors documentation
+v0.0.1
+  date: 2015-06-30
+  changes:
+    - Initial commit
