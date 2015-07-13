@@ -1,7 +1,7 @@
 Primer
 ===
-Version 0.0.2	
-Last Updated: July 9, 2015
+Version 0.0.3	
+Last Updated: July 13, 2015
 
 Primer is a user-experience CSS framework for StubHub. Primer brings UI consistency to your application, creating a strong foundation for future interface innovations and brand updates.
 
