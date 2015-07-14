@@ -1,0 +1,54 @@
+// Inputs
+.form-input {
+  display: block;
+  padding: 10px 15px;
+  width: 100%;
+  color: $tertiary40;
+  font-size: $text-font-size;
+  border: 1px solid $tertiary60;
+  border-radius: 1px;
+  appearance: none;
+  @include breakpoint(medium) {
+    $text-font-size: 1.2rem;
+    font-size: $text-font-size;
+  }
+  @include breakpoint(large) {
+    $text-font-size: 1.1rem;
+    font-size: $text-font-size;
+  }
+  &:focus {
+    outline: none;
+    border-color: $brand-primary;
+  }
+
+  .form-inline & {
+    display: inline-block;
+    width: auto;
+  }
+}
+
+// Textarea
+textarea.form-input {
+  resize: none;
+}
+
+// Select
+select.form-input {
+  background: $true-white url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/91494/caret-dropdown.svg) no-repeat 98% center; // fpo
+  //background: $true-white url(assets/svg/caret-dropdown.svg) no-repeat 98% center;
+  appearance: none;
+
+  // Remove arrow icon in IE 10+
+  &::-ms-expand {
+    display: none;
+  }
+}
+
+// Utility classes
+.is-invalid {
+  border: 1px solid $state-error;
+}
+
+.is-valid {
+  border: 1px solid $state-success;
+}

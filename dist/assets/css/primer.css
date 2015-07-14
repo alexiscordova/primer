@@ -784,6 +784,59 @@ strong,
   text-transform: uppercase;
 }
 
+.form-input {
+  display: block;
+  padding: 10px 15px;
+  width: 100%;
+  color: #959ba3;
+  font-size: 1.4rem;
+  border: 1px solid #f2f3f4;
+  border-radius: 1px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+@media screen and (min-width: 40em) {
+  .form-input {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (min-width: 64em) {
+  .form-input {
+    font-size: 1.1rem;
+  }
+}
+.form-input:focus {
+  outline: none;
+  border-color: #0064b1;
+}
+.form-inline .form-input {
+  display: inline-block;
+  width: auto;
+}
+
+textarea.form-input {
+  resize: none;
+}
+
+select.form-input {
+  background: #fff url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/91494/caret-dropdown.svg) no-repeat 98% center;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+select.form-input::-ms-expand {
+  display: none;
+}
+
+.is-invalid {
+  border: 1px solid #ff1700;
+}
+
+.is-valid {
+  border: 1px solid #15ef55;
+}
+
 html {
   box-sizing: border-box;
 }

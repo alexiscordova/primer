@@ -1,7 +1,7 @@
 Primer
 ===
 Base Documentation  
-Last Updated: July 6, 2015
+Last Updated: July 13, 2015
 
 The `base/` folder holds what is generally considered the boilerplate code for Primer. Each individual file, denoted by a prefixed underscore in the filename, is imported into `base.scss`, which is then imported into the main `primer.scss` file.
 
@@ -11,6 +11,7 @@ Currently, the `base/` directory holds the following files:
 - `_animations.scss`
 - `_fonts.scss`
 - `_typography.scss`
+- `_inputs.scss`
 
 Main
 --
@@ -79,3 +80,34 @@ Primer comes with some pre-built utility classes that can be applied to any text
 - `.heading-bold` sets the proper `font-family` and `font-weight` for headings.
 - `.text-lowercase` sets any text or heading elements to lowercase.
 - `.text-uppercase` sets any text or heading elements to all caps.
+
+Inputs
+--
+The `_inputs.scss` file contains all the declarations for form elements in Primer. Primer form field and menu styles are triggered via the `.form-input` classname, and are only valid on native HTML elements (e.g., `<input>`, `<select>`, `<textarea>`).
+
+	<form>
+		<input type="text" class="form-input" placeholder="Full Name" />
+	</form>
+
+Note: Form fields and menus without a classname will contain the browser default styles.
+
+###Inline Forms
+By default, form inputs are `width: 100%;`. With inline forms – triggered by the addition of the `.form-inline` class on the parent (usually a `<form>`) – Primer resets this to `width: auto` so multiple controls can reside on the same line. Because of this, additional custom widths may be required for your layout.
+
+	<form class="form-inline">
+		<input type="text" class="form-input" placeholder="Full Name" />
+	</form>
+###Utility Classes
+Utility classes can also be applied to form fields and menus to denote state:
+
+- `.is-valid` can be applied to form fields and menus that have a valid input, and is styled with the `$state-success` border color.
+- `.is-invalid` can be applied to form fields and menus that have an invalid input, and is styled with the `$state-error` border color.
+
+###Accessibility
+As best practice, **always use a `<label>`** whenever possible. When this is not possible, you must provide an alternative method for assistive technologies, such as `aria-label`, `aria-labelledby`, or `title`. If these are not present, some screen readers may use the `placeholder` attribute, but this should not be used as a replacement for `aria-*` attribtues.
+
+To provide text hinting (e.g., "(415) 867-5309" in a `<input type="tel">` field), you can use the [`placeholder` attribute](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Input).
+
+Note: The `placeholder` attribute works on all Primer-supported browsers except [Internet Explorer 9](http://caniuse.com/#feat=input-placeholder). In IE 9, the placeholder text does not appear.
+
+Also, always use the proper input type. While using `text`, `email`, or `tel` input types on desktop does not have a visual impact, it makes a large impact on devices with soft keyboards. Making use of available attributes can also enhance the user experience (e.g., not autocorrecting or capitalizing certain fields). More information on `<input>` attribtues can be found on [MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Input?redirectlocale=en-US&redirectslug=HTML%2FElement%2FInput).
