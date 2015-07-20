@@ -1,7 +1,7 @@
 Primer
 ===
-Version 0.0.4	
-Last Updated: July 15, 2015
+Version 0.0.5	
+Last Updated: July 20, 2015
 
 Primer is a user-experience CSS framework for StubHub. Primer brings UI consistency to your application, creating a strong foundation for future interface innovations and brand updates.
 
@@ -13,6 +13,7 @@ Primer currently contains the following features:
 
 - Responsive and mobile first.
 - A solid base built around [Normalize.css](https://necolas.github.io/normalize.css/).
+- Fixed and responsive grid system.
 - Basic layout structures so page boundaries are consistent across views.
 - A typographic system covering all headings, body copy, and legal text, as well as emphasis, transforms, and positioning.
 - A robust color system with customizable scales.

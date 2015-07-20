@@ -1,25 +1,17 @@
 Primer
 ===
 Base Documentation  
-Last Updated: July 13, 2015
+Last Updated: July 20, 2015
 
 The `base/` folder holds what is generally considered the boilerplate code for Primer. Each individual file, denoted by a prefixed underscore in the filename, is imported into `base.scss`, which is then imported into the main `primer.scss` file.
 
 Currently, the `base/` directory holds the following files:
 
-- `_main.scss`
 - `_animations.scss`
 - `_fonts.scss`
 - `_typography.scss`
 - `_inputs.scss`
 
-Main
---
-The `_main.scss` file holds much of the base layout properties for Primer. [`box-sizing` best practices](https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/) are applied here, as well as default properties for `body` and containers.
-
-Layout-realted utility classes are also provided, allowing for horizontal centering for block-level elements, inline-level elements, and display properties.
-
-The inline-level and display utility classes also have responsive classes that will only apply on certain breakpoints. The classname convention is [utility-class]-[size]. (e.g., `.text-right-small`).
 
 Animations
 --
@@ -85,18 +77,23 @@ Inputs
 --
 The `_inputs.scss` file contains all the declarations for form elements in Primer. Primer form field and menu styles are triggered via the `.form-input` classname, and are only valid on native HTML elements (e.g., `<input>`, `<select>`, `<textarea>`).
 
-	<form>
-		<input type="text" class="form-input" placeholder="Full Name" />
-	</form>
+```html
+<form>
+	<input type="text" class="form-input" placeholder="Full Name" />
+</form>
+```
 
 Note: Form fields and menus without a classname will contain the browser default styles.
 
 ###Inline Forms
 By default, form inputs are `width: 100%;`. With inline forms – triggered by the addition of the `.form-inline` class on the parent (usually a `<form>`) – Primer resets this to `width: auto` so multiple controls can reside on the same line. Because of this, additional custom widths may be required for your layout.
 
-	<form class="form-inline">
-		<input type="text" class="form-input" placeholder="Full Name" />
-	</form>
+```html
+<form class="form-inline">
+	<input type="text" class="form-input" placeholder="Full Name" />
+</form>
+```
+
 ###Utility Classes
 Utility classes can also be applied to form fields and menus to denote state:
 

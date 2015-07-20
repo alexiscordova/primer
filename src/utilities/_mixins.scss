@@ -53,22 +53,45 @@ $breakpoints: (
   }
 }
 
+// Name: columns-setup
+// Description: Creates the grid classes required for the Primer grid system.
+// Required: $i, iterator from grid-setup mixin loop
+// Required: $name, key from $breakpoints map, passed in from grid-setup mixin
+$content-width: 1200px;
+$grid-columns: 12;
 
-// grid-setup – Create grid columns
-@mixin grid-setup() {
+@mixin columns-setup($i, $name) {
+  .column-#{$i} {
+    width: ((100% / $grid-columns) * $i);
+  }
+
+  .column-#{$name}-#{$i} {
+    width: ((100% / $grid-columns) * $i);
+  }
+
+  .column-offset-#{$i} {
+    margin-left: ((100% / $grid-columns) * $i);
+  }
+
+  .column-#{$name}-offset-#{$i} {
+    margin-left: ((100% / $grid-columns) * $i);
+  }
+}
+
+// Name: grid-system
+// Description: Creates Primer grid system
+@mixin grid-system() {
   @each $name, $size in $breakpoints {
-    @include breakpoint($name) {
+    @if $name == 'small' {
       @for $i from 1 through $grid-columns {
-        .col-#{$i} {
-          width: ((100% / $grid-columns) * $i);
-        }
+        @include columns-setup($i, $name);
+      }
+    }
 
-        .col-#{$name}-#{$i} {
-          width: ((100% / $grid-columns) * $i);
-        }
-
-        .col-#{$name}-skip-#{$i} {
-          margin-left: ((100% / $grid-columns) * $i);
+    @else {
+      @include breakpoint($name) {
+        @for $i from 1 through $grid-columns {
+          @include columns-setup($i, $name);
         }
       }
     }

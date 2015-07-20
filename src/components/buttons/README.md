@@ -16,33 +16,45 @@ Buttons also come with two pseduo classes: `:hover` and `:active`.
 
 By default, you can create a button using this minimal markup:
 
-	<button type="button" class="btn">Button</button>
+```html
+<button type="button" class="btn">Button</button>
+```
 
 Other options are also available, depending on your use-case scenario:
 
 ####Primary
 
-	<button type="button" class="btn btn-primary">Primary</button>
+```html
+<button type="button" class="btn btn-primary">Primary</button>
+```
 
 ####Call-To-Action (CTA)
 
-	<button type="button" class="btn btn-cta">CTA</button>
+```html
+<button type="button" class="btn btn-cta">CTA</button>
+```
 
 ####Call-To-Action (CTA) Secondary
 
-	<button type="button" class="btn btn-cta-secondary">Primary</button>
+```html
+<button type="button" class="btn btn-cta-secondary">Primary</button>
+```
 
 ###Disabled State
 Buttons can be disabled using the `disabled` boolean attribute.
 
-	<button type="button" class="btn" disabled>Button</button>
+```html
+<button type="button" class="btn" disabled>Button</button>
+```
 
 Setting a button to disabled indicates that the user cannot interact with the button. Visually, this is achieved by setting an opacity of 30% on the button, as well as changing the cursor to `not-allowed`.
 
 ###Accessibility
 As stated earlier, using the `<button>` element is recommended. In the event that using this element is not possible or not desired, certain accessibility properties must be added to your element of choice.
 
-	<a class="btn" role="button" tabindex="0">Button</a>
+```html
+<a class="btn" role="button" tabindex="0">Button</a>
+```
 
 Setting `role="button"` is required when not using the `<button>` element, and `tabindex` allows screen readers to select the button when using only the keyboard. **These accessibility enhancements come for free when using the `<button>` element**.
 
