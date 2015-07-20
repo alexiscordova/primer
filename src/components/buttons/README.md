@@ -1,7 +1,7 @@
 Primer
 ===
 Button Documentation  
-Last Updated: July 10, 2015
+Last Updated: July 20, 2015
 
 ##Buttons
 Buttons are convenient tools when you need more traditional actions, most often triggered by a click. Primer offers a set of buttons, as well as utility classes, to fit most use cases.
@@ -38,6 +38,11 @@ Other options are also available, depending on your use-case scenario:
 
 ```html
 <button type="button" class="btn btn-cta-secondary">Primary</button>
+```
+
+####Block
+```html
+<button type="button" class="btn btn-block">Block-Level Button</button>
 ```
 
 ###Disabled State

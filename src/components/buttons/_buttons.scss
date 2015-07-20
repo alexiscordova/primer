@@ -75,6 +75,11 @@ $button-large: 15px 40px;
   }
 }
 
+.btn-block {
+  display: block;
+  width: 100%;
+}
+
 .btn[disabled] {
   opacity: 0.3;
   cursor: not-allowed;

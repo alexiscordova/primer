@@ -9,3 +9,4 @@ The current components in Primer are:
 
 - Buttons
 - Date (subcomponent)
+- Cards
