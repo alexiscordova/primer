@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="93px" height="92px" viewBox="0 0 93 92" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.3 (12081) - http://www.bohemiancoding.com/sketch -->
+    <title>Icon-Close</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Icon-Close" sketch:type="MSLayerGroup" transform="translate(-15.000000, -14.000000)" fill="#231F1F">
+            <path d="M101.241,105.84 L16.487,21.086 L23.246,14.327 L108,99.081 L101.241,105.84" id="Fill-2" sketch:type="MSShapeGroup"></path>
+            <path d="M21.758,105.84 L15,99.081 L99.754,14.327 L106.513,21.086 L21.758,105.84" id="Fill-3" sketch:type="MSShapeGroup"></path>
+        </g>
+    </g>
+</svg>

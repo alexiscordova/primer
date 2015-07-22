@@ -1,0 +1,32 @@
+// Notifications
+$notification-height: 74px;
+
+.notification {
+  position: absolute;
+  z-index: 1000;
+  top: 0;
+  width: 100%;
+  height: $notification-height;
+
+  .notification-message {
+    color: $true-white;
+    line-height: $notification-height;
+  }
+
+  .close {
+    z-index: 1000;
+    &:after {
+      background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/91494/icon-close-white.svg) center center no-repeat;
+      //background: url(assets/svg/icon-close-white.svg) 0 0 no-repeat;
+      background-size: contain;
+    }
+  }
+
+  // Notification states
+  &.is-successful {
+    background-color: $state-success;
+  }
+  &.is-unsuccessful {
+    background-color: $state-error;
+  }
+}

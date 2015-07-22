@@ -959,6 +959,26 @@ body {
     display: none;
   }
 }
+.close {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  padding: 20px;
+  cursor: pointer;
+}
+.close:after {
+  position: absolute;
+  z-index: 1000;
+  top: 50%;
+  right: 50%;
+  margin-top: -5px;
+  margin-right: -5px;
+  width: 10px;
+  height: 10px;
+  content: '';
+}
+
 .row {
   width: 100%;
 }
@@ -1737,7 +1757,11 @@ body {
 .card.card-simple .event {
   padding: 0;
 }
-.card.card-simple .event-details {
+.card.card-simple .event-details:only-child {
+  max-width: 100%;
+  width: 100%;
+}
+.card.card-simple .event-details:not(:only-child) {
   margin-left: 0;
   max-width: calc(100% - 85px);
 }
