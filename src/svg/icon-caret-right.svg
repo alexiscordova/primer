@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="40px" height="65px" viewBox="0 0 40 65" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.3 (12081) - http://www.bohemiancoding.com/sketch -->
+    <title>Icon-CaratRight</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path id="path-1" d="M30.676,22.663 L9.157,0.143 L0.128,9.592 L21.647,32.112 L0.128,54.632 L9.157,64.081 L30.676,41.561 L30.828,41.72 L39.857,32.27 L39.706,32.112 L39.857,31.954 L30.828,22.504 L30.676,22.663 L30.676,22.663 Z"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Icon-CaratRight" sketch:type="MSLayerGroup" transform="translate(-44.000000, -28.000000)">
+            <g id="Group-4" transform="translate(44.000000, 28.000000)">
+                <mask id="mask-2" sketch:name="Clip 3" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Clip-3"></g>
+                <path d="M0.04,0.06 L39.88,0.06 L39.88,64.14 L0.04,64.14 L0.04,0.06 Z" id="Fill-2" fill="#000000" sketch:type="MSShapeGroup" mask="url(#mask-2)"></path>
+            </g>
+        </g>
+    </g>
+</svg>

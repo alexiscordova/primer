@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="120px" height="121px" viewBox="0 0 120 121" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.3 (12081) - http://www.bohemiancoding.com/sketch -->
+    <title>Icon-More</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Icon-More" sketch:type="MSLayerGroup">
+            <path d="M60,12.5 C86.467,12.5 108,34.033 108,60.5 C108,86.967 86.467,108.5 60,108.5 C33.533,108.5 12,86.967 12,60.5 C12,34.033 33.533,12.5 60,12.5 M60,0.5 C26.863,0.5 0,27.363 0,60.5 C0,93.637 26.863,120.5 60,120.5 C93.137,120.5 120,93.637 120,60.5 C120,27.363 93.137,0.5 60,0.5" id="Fill-1" fill="#231F1F" sketch:type="MSShapeGroup"></path>
+            <path d="M43.146,60.5 C43.146,65.679 38.948,69.877 33.769,69.877 C28.59,69.877 24.392,65.679 24.392,60.5 C24.392,55.321 28.59,51.123 33.769,51.123 C38.948,51.123 43.146,55.321 43.146,60.5" id="Fill-2" fill="#000000" sketch:type="MSShapeGroup"></path>
+            <path d="M95.608,60.5 C95.608,65.679 91.41,69.877 86.231,69.877 C81.052,69.877 76.854,65.679 76.854,60.5 C76.854,55.321 81.052,51.123 86.231,51.123 C91.41,51.123 95.608,55.321 95.608,60.5" id="Fill-3" fill="#000000" sketch:type="MSShapeGroup"></path>
+            <path d="M69.377,60.5 C69.377,65.679 65.179,69.877 60,69.877 C54.821,69.877 50.623,65.679 50.623,60.5 C50.623,55.321 54.821,51.123 60,51.123 C65.179,51.123 69.377,55.321 69.377,60.5" id="Fill-4" fill="#000000" sketch:type="MSShapeGroup"></path>
+        </g>
+    </g>
+</svg>

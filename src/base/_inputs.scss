@@ -34,8 +34,9 @@ textarea.form-input {
 
 // Select
 select.form-input {
-  background: $true-white url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/91494/caret-dropdown.svg) no-repeat 98% center; // fpo
-  //background: $true-white url(assets/svg/caret-dropdown.svg) no-repeat 98% center;
+  background: $true-white url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/91494/icon-caret-down.svg) no-repeat 98% center; // fpo
+  //background: $true-white url(assets/svg/icon-caret-down.svg) no-repeat 98% center;
+  background-size: 10px 10px;
   appearance: none;
 
   // Remove arrow icon in IE 10+

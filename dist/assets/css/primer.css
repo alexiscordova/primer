@@ -820,7 +820,8 @@ textarea.form-input {
 }
 
 select.form-input {
-  background: #fff url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/91494/caret-dropdown.svg) no-repeat 98% center;
+  background: #fff url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/91494/icon-caret-down.svg) no-repeat 98% center;
+  background-size: 10px 10px;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
