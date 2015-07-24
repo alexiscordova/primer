@@ -1000,6 +1000,9 @@ body {
     padding-left: 8px;
   }
 }
+[class*="column-"].no-gutters {
+  padding: 0;
+}
 
 .column-1 {
   width: 8.3333333333%;
@@ -1804,4 +1807,56 @@ body {
   padding: 10px;
   color: #fff;
   background-color: #ef4130;
+}
+
+.notification {
+  position: absolute;
+  z-index: 1000;
+  top: 0;
+  width: 100%;
+  height: 74px;
+}
+.notification .notification-message {
+  color: #fff;
+  line-height: 74px;
+}
+.notification .close {
+  z-index: 1000;
+}
+.notification .close:after {
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/91494/icon-close-white.svg) center center no-repeat;
+  background-size: contain;
+}
+.notification.is-successful {
+  background-color: #15ef55;
+}
+.notification.is-unsuccessful {
+  background-color: #ff1700;
+}
+
+.hero {
+  height: 180px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+@media screen and (min-width: 64em) {
+  .hero {
+    height: 260px;
+  }
+}
+.hero .hero-title {
+  position: relative;
+  z-index: 1;
+  top: 40px;
+  left: 5%;
+  max-width: 250px;
+  color: #fff;
+  border-top: 6px solid #fff;
+}
+@media screen and (min-width: 40em) {
+  .hero .hero-title {
+    left: 10%;
+    max-width: 450px;
+  }
 }

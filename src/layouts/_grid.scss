@@ -16,6 +16,9 @@ $grid-gutters-md: 16px;
       padding-right: ($grid-gutters-md / 2);
       padding-left: ($grid-gutters-md / 2);
     }
+    &.no-gutters {
+      padding: 0;
+    }
   }
 
   @include grid-system;
