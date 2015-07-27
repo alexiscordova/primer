@@ -13,13 +13,10 @@ $notification-height: 74px;
     line-height: $notification-height;
   }
 
-  .close {
-    z-index: 1000;
-    &:after {
-      background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/91494/icon-close-white.svg) center center no-repeat;
-      //background: url(assets/svg/icon-close-white.svg) 0 0 no-repeat;
-      background-size: contain;
-    }
+  .close svg {
+    width: 10px;
+    height: 10px;
+    fill: $true-white;
   }
 
   // Notification states

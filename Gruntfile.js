@@ -7,21 +7,16 @@ module.exports = function(grunt) {
 
     // grunt-contrib-clean
     clean: {
-      build: ['build'],
-      dist: ['dist']
+      dist: ['dist'],
+      icons: ['dist/assets/svg']
     },
 
     copy: {
-      build: {
-        expand: true,
-        src: ['src/fonts'],
-        dest: 'build/'
-      },
-
       dist: {
         expand: true,
-        src: ['src/fonts'],
-        dest: 'dist/'
+        cwd: 'src',
+        src: ['fonts/*', 'svg/*'],
+        dest: 'dist/assets/'
       }
     },
 
@@ -30,12 +25,6 @@ module.exports = function(grunt) {
       options: {
         style: 'expanded',
         precision: 10
-      },
-
-      build: {
-        files: [
-          { 'build/assets/css/primer.css': 'src/primer.scss' }
-        ]
       },
 
       dist: {
@@ -55,7 +44,6 @@ module.exports = function(grunt) {
         cascade: false
       },
 
-      build: { src: 'build/assets/css/primer.css' },
       dist: { src: 'dist/assets/css/primer.css' }
     },
 
@@ -75,12 +63,47 @@ module.exports = function(grunt) {
     watch: {
       sass: {
         files: ['**/*.scss'],
-        tasks: ['clean:build', 'sass:build', 'autoprefixer:build']
+        tasks: ['clean', 'sass:dist', 'autoprefixer:dist']
+      }
+    },
+
+    // grunt-svgstore
+    svgstore: {
+      options: {
+        cleanup: ['fill', 'fill-rule'],
+        svg: {
+          style: 'display: none;',
+          xmlns: 'http://www.w3.org/2000/svg',
+          'xmlns:sketch': 'http://www.bohemiancoding.com/sketch/ns',
+          'xmlns:xlink': 'http://www.w3.org/1999/xlink'
+        }
+      },
+      default: {
+        files: {
+          'dist/assets/svg/primer-iconset.svg': ['src/svg/*.svg']
+        }
+      }
+    },
+
+    // grunt-contrib-imagemin
+    imagemin: {
+      dist: {
+        options: {
+          optimizationLevel: 3
+        },
+        files: [
+          {
+            expand: true,
+            cwd: '',
+            src: ['src/svg/*.svg'],
+            dest: ''
+          }
+        ]
       }
     }
   });
 
   // Registered Grunt tasks
-  grunt.registerTask('default', ['clean:build', 'sass:build', 'autoprefixer:build']);
-  grunt.registerTask('deploy', ['clean', 'sass:dist', 'autoprefixer:dist', 'cssmin:dist']);
+  grunt.registerTask('default', ['clean', 'sass:dist', 'autoprefixer:dist', 'cssmin:dist', 'icons']);
+  grunt.registerTask('icons', ['clean:icons', 'imagemin', 'copy', 'svgstore']);
 };

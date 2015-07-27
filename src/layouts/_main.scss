@@ -133,22 +133,12 @@ body {
 }
 
 // Close icon
+// This utility class is used when dismissing or closing an element, such as a modal or a notification
 .close {
   position: absolute;
-  z-index: 1;
+  z-index: 1000;
   top: 0;
   right: 0;
-  padding: 20px;
+  padding: 10px;
   cursor: pointer;
-  &:after {
-    position: absolute;
-    z-index: 1000;
-    top: 50%;
-    right: 50%;
-    margin-top: -5px;
-    margin-right: -5px;
-    width: 10px;
-    height: 10px;
-    content: '';
-  }
 }

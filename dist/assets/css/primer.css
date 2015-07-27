@@ -962,22 +962,11 @@ body {
 }
 .close {
   position: absolute;
-  z-index: 1;
+  z-index: 1000;
   top: 0;
   right: 0;
-  padding: 20px;
+  padding: 10px;
   cursor: pointer;
-}
-.close:after {
-  position: absolute;
-  z-index: 1000;
-  top: 50%;
-  right: 50%;
-  margin-top: -5px;
-  margin-right: -5px;
-  width: 10px;
-  height: 10px;
-  content: '';
 }
 
 .row {
@@ -1820,12 +1809,10 @@ body {
   color: #fff;
   line-height: 74px;
 }
-.notification .close {
-  z-index: 1000;
-}
-.notification .close:after {
-  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/91494/icon-close-white.svg) center center no-repeat;
-  background-size: contain;
+.notification .close svg {
+  width: 10px;
+  height: 10px;
+  fill: #fff;
 }
 .notification.is-successful {
   background-color: #15ef55;
