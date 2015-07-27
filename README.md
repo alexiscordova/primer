@@ -1,7 +1,7 @@
 Primer
 ===
-Version 0.0.9	
-Last Updated: July 24, 2015
+Version 0.1.0	
+Last Updated: July 27, 2015
 
 Primer is a user-experience CSS framework for StubHub. Primer brings UI consistency to your application, creating a strong foundation for future interface innovations and brand updates.
 
@@ -20,7 +20,6 @@ Primer currently contains the following features:
 - Reusable and customizable CSS keyframe animations.
 - Reusable user-interface components, which include buttons, event cards, hero images, and notifications.
 
-
 Dependencies
 ---
 TBA
@@ -37,6 +36,8 @@ Primer is tested and supported in the following browsers:
 - Last two stable versions of Safari, Chrome, and Firefox
 - Last three stable versions of Mobile Safari (iOS)
 - Chrome Mobile
+
+**Note**: While Internet Explorer 9+ is supported, some features may require polyfills for certain versions.
 
 Contributions
 ---
