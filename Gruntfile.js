@@ -15,7 +15,7 @@ module.exports = function(grunt) {
       dist: {
         expand: true,
         cwd: 'src',
-        src: ['fonts/*', 'svg/*'],
+        src: ['fonts/*', 'svg/image-*.svg'],
         dest: 'dist/assets/'
       }
     },
@@ -80,7 +80,7 @@ module.exports = function(grunt) {
       },
       default: {
         files: {
-          'dist/assets/svg/primer-iconset.svg': ['src/svg/*.svg']
+          'dist/assets/svg/primer-iconset.svg': ['src/svg/icon-*.svg']
         }
       }
     },

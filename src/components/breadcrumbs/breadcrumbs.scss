@@ -1,0 +1,35 @@
+// Breadcrumbs
+.breadcrumbs {
+  width: 100%;
+  .breadcrumb-list {
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+  }
+  .breadcrumb {
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+  }
+  .breadcrumb a {
+    padding-right: 20px;
+    color: $tertiary30;
+    font-size: $small-font-size;
+    text-decoration: none;
+  }
+  .breadcrumb:not(:last-child) a {
+    color: $brand-primary;
+    &:after {
+      position: absolute;
+      z-index: 1;
+      top: 4px;
+      right: 3px;
+      width: 10px;
+      height: 10px;
+      background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/91494/image-caret-right.svg) center center no-repeat;
+      //background: url(assets/svg/image-caret-right.svg) center center no-repeat;
+      background-size: contain;
+      content: '';
+    }
+  }
+}
