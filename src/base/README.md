@@ -75,7 +75,7 @@ Primer comes with some pre-built utility classes that can be applied to any text
 
 Inputs
 --
-The `_inputs.scss` file contains all the declarations for form elements in Primer. Primer form field and menu styles are triggered via the `.form-input` classname, and are only valid on native HTML elements (e.g., `<input>`, `<select>`, `<textarea>`).
+The `_inputs.scss` file contains all the declarations for form elements in Primer. Primer text field and menu styles are triggered via the `.form-input` classname, and are only valid on native HTML elements (e.g., `<input>`, `<select>`, `<textarea>`).
 
 ```html
 <form>
@@ -93,6 +93,25 @@ By default, form inputs are `width: 100%;`. With inline forms – triggered by 
 	<input type="text" class="form-input" placeholder="Full Name" />
 </form>
 ```
+
+###Checkboxes and Radio Buttons
+Along with text fields and menus, Primer comes with custom checkboxes and radio buttons. These input types are triggered with either `.form-checkbox` or `.form-radio`, respectively.
+
+```html
+<form>
+	<input type="checkbox" id="checkbox" class="form-checkbox" />
+    <label for="checkbox">Checkbox</label>
+</form>
+
+<form>
+	<input type="radio" id="radio" class="form-radio" name="radio-button" value="1"/>
+    <label for="radio">Radio Button</label>
+</form>
+```
+
+Labels for both checkboxes and radio buttons both require the `for` attribute to be provided, which matches a corresponding `id`. This will allow a checkbox or radio button to be selected when clicking the `<label>`. Radio buttons additionally require the `name` and `value` attributes.
+
+More information about `<input>` and its attribtues can be found on [MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Input?redirectlocale=en-US&redirectslug=HTML%2FElement%2FInput).
 
 ###Utility Classes
 Utility classes can also be applied to form fields and menus to denote state:

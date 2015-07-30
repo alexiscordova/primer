@@ -790,7 +790,7 @@ strong,
   width: 100%;
   color: #959ba3;
   font-size: 1.4rem;
-  border: 1px solid #f2f3f4;
+  border: 1px solid #e7eaec;
   border-radius: 1px;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -810,17 +810,9 @@ strong,
   outline: none;
   border-color: #0064b1;
 }
-.form-inline .form-input {
-  display: inline-block;
-  width: auto;
-}
-
-textarea.form-input {
-  resize: none;
-}
 
 select.form-input {
-  background: #fff url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/91494/icon-caret-down.svg) no-repeat 98% center;
+  background: #fff url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/91494/image-caret-down.svg) no-repeat 98% center;
   background-size: 10px 10px;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -830,12 +822,82 @@ select.form-input::-ms-expand {
   display: none;
 }
 
+textarea.form-input {
+  resize: none;
+}
+
+.form-checkbox, .form-radio {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 0;
+  width: 15px;
+  height: 15px;
+  background-color: #fff;
+  border: 1px solid #e7eaec;
+  border-radius: 1px;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.form-checkbox:checked, .form-radio:checked {
+  background: #f36719 url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/91494/image-checkmark.svg) center center no-repeat;
+  background-size: 8px 8px;
+}
+.form-checkbox + label, .form-radio + label {
+  display: inline-block;
+  line-height: 1;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.form-radio {
+  border-radius: 50%;
+}
+.form-radio:checked:before {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  margin-top: -5px;
+  margin-left: -5px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #f36719;
+  content: '';
+}
+
+.form-inline > [class*="form-"] {
+  display: inline-block;
+  width: auto;
+}
+
+.form-checkbox[disabled], [disabled].form-radio,
+.form-radio[disabled] {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+.form-checkbox[disabled][checked], [disabled][checked].form-radio,
+.form-radio[disabled][checked] {
+  background-color: #959ba3;
+}
+.form-checkbox[disabled] + label, [disabled].form-radio + label,
+.form-radio[disabled] + label {
+  opacity: 0.3;
+}
+
+.form-radio[disabled][checked] {
+  background-color: inherit;
+}
+
 .is-invalid {
-  border: 1px solid #ff1700;
+  border-color: #ff1700;
 }
 
 .is-valid {
-  border: 1px solid #15ef55;
+  border-color: #15ef55;
 }
 
 html {

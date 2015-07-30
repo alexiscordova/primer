@@ -1,11 +1,13 @@
 // Inputs
+
+// Form Fields (text, email, password; )
 .form-input {
   display: block;
   padding: 10px 15px;
   width: 100%;
   color: $tertiary40;
   font-size: $text-font-size;
-  border: 1px solid $tertiary60;
+  border: 1px solid $tertiary50;
   border-radius: 1px;
   appearance: none;
   @include breakpoint(medium) {
@@ -20,22 +22,12 @@
     outline: none;
     border-color: $brand-primary;
   }
-
-  .form-inline & {
-    display: inline-block;
-    width: auto;
-  }
-}
-
-// Textarea
-textarea.form-input {
-  resize: none;
 }
 
 // Select
 select.form-input {
-  background: $true-white url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/91494/icon-caret-down.svg) no-repeat 98% center; // fpo
-  //background: $true-white url(assets/svg/icon-caret-down.svg) no-repeat 98% center;
+  background: $true-white url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/91494/image-caret-down.svg) no-repeat 98% center; // fpo
+  //background: $true-white url(assets/svg/image-caret-down.svg) no-repeat 98% center;
   background-size: 10px 10px;
   appearance: none;
 
@@ -45,11 +37,85 @@ select.form-input {
   }
 }
 
-// Utility classes
+// Textarea
+textarea.form-input {
+  resize: none;
+}
+
+// Checkboxes
+.form-checkbox {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 0;
+  width: 15px;
+  height: 15px;
+  background-color: $true-white;
+  border: 1px solid $tertiary50;
+  border-radius: 1px;
+  vertical-align: middle;
+  cursor: pointer;
+  appearance: none;
+  &:checked {
+    background: $brand-secondary url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/91494/image-checkmark.svg) center center no-repeat;
+    background-size: 8px 8px;
+  }
+
+  & + label {
+    display: inline-block;
+    //margin-top: 1px;
+    line-height: 1;
+    vertical-align: middle;
+    cursor: pointer;
+  }
+}
+
+// Radio Buttons
+.form-radio {
+  @extend .form-checkbox;
+  border-radius: 50%;
+  &:checked:before {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    margin-top: -5px;
+    margin-left: -5px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: $brand-secondary;
+    content: '';
+  }
+}
+
+// Utility Classes
+.form-inline > [class*="form-"] {
+  display: inline-block;
+  width: auto;
+}
+
+// Disabled States
+.form-checkbox[disabled],
+.form-radio[disabled] {
+  opacity: 0.3;
+  cursor: not-allowed;
+  &[checked] {
+    background-color: $tertiary40;
+  }
+  & + label {
+    opacity: 0.3;
+  }
+}
+
+.form-radio[disabled][checked] {
+  background-color: inherit;
+}
+
+// State Utility Classes
 .is-invalid {
-  border: 1px solid $state-error;
+  border-color: $state-error;
 }
 
 .is-valid {
-  border: 1px solid $state-success;
+  border-color: $state-success;
 }
