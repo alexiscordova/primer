@@ -1,0 +1,29 @@
+// Modals
+.modal {
+  position: absolute;
+  z-index: 1001;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba($true-black, 0.5);
+  .modal-body {
+    position: relative;
+    top: 80px;
+    margin: 10px auto;
+    padding: 30px;
+    width: 100%;
+    background-color: $true-white;
+    @include breakpoint(medium) {
+      margin-top: 0;
+      margin-bottom: 0;
+      width: 400px;
+    }
+  }
+  .modal-headline {
+    margin-bottom: 10px;
+  }
+  .modal-copy {
+    margin-bottom: 20px;
+  }
+}

@@ -13,3 +13,4 @@ The current components in Primer are:
 - Date (subcomponent)
 - Hero
 - Notifications
+- Modals

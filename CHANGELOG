@@ -1,50 +1,54 @@
-v0.2.0
+v0.12.0
+  date: 2015-08-03
+  change:
+    - Add modal component
+v0.11.0
   date: 2015-07-30
   changes:
     - Refactor inputs
     - Add checkboxes
     - Add radio buttons
-v0.1.1
+v0.10.0
   date: 2015-07-29
   changes:
     - Add SVG icon set documentation
-v0.1.0
+v0.9.0
   date: 2015-07-27
   changes:
     - Update SVG icons
     - Add breadcrumbs component
     - Bug fixes
-v0.0.9
+v0.8.0
   date: 2015-07-24
   changes:
     - Add hero component
     - Add no-gutters grid utility class
-v0.0.8
+v0.7.0
   date: 2015-07-24
   changes:
     - Add SVG icon set
-v0.0.7
+v0.6.0
   date: 2015-07-24
   changes:
     - Add notifications component
     - Add close icon utility class
-v0.0.6
+v0.5.0
   date: 2015-07-21
   changes:
     - Add cards component
-v0.0.5
+v0.4.0
   date: 2015-07-20
   changes:
     - Update grid system
-v0.0.4
+v0.3.0
   date: 2015-07-15
   changes:
     - Add date subcomponent
-v0.0.3
+v0.2.0
   date: 2015-07-13
   changes:
     - Add button subcomponent
-v0.0.2
+v0.1.0
   date: 2015-07-09
   changes:
     - Added CSS keyframe animations
@@ -57,7 +61,7 @@ v0.0.2
     - Added mixins
     - Added utility documentation
     - Added vendors documentation
-v0.0.1
+v0.0.0
   date: 2015-06-30
   changes:
     - Initial commit

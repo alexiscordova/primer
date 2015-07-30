@@ -75,9 +75,32 @@ $button-large: 15px 40px;
   }
 }
 
-.btn-block {
+.btn-block,
+.btn-small-block {
   display: block;
   width: 100%;
+}
+
+@include breakpoint(medium) {
+  .btn-small-block {
+    display: inline-block;
+    width: auto;
+  }
+  .btn-medium-block {
+    display: block;
+    width: 100%;
+  }
+}
+
+@include breakpoint(large) {
+  .btn-medium-block {
+    display: inline-block;
+    width: auto;
+  }
+  .btn-large-block {
+    display: block;
+    width: 100%;
+  }
 }
 
 .btn[disabled] {

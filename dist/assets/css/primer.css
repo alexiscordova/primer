@@ -1708,11 +1708,34 @@ body {
   border-color: #f36719;
 }
 
-.btn-block {
+.btn-block,
+.btn-small-block {
   display: block;
   width: 100%;
 }
 
+@media screen and (min-width: 40em) {
+  .btn-small-block {
+    display: inline-block;
+    width: auto;
+  }
+
+  .btn-medium-block {
+    display: block;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 64em) {
+  .btn-medium-block {
+    display: inline-block;
+    width: auto;
+  }
+
+  .btn-large-block {
+    display: block;
+    width: 100%;
+  }
+}
 .btn[disabled] {
   opacity: 0.3;
   cursor: not-allowed;
@@ -1908,4 +1931,35 @@ body {
     left: 10%;
     max-width: 450px;
   }
+}
+
+.modal {
+  position: absolute;
+  z-index: 1001;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.modal .modal-body {
+  position: relative;
+  top: 80px;
+  margin: 10px auto;
+  padding: 30px;
+  width: 100%;
+  background-color: #fff;
+}
+@media screen and (min-width: 40em) {
+  .modal .modal-body {
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 400px;
+  }
+}
+.modal .modal-headline {
+  margin-bottom: 10px;
+}
+.modal .modal-copy {
+  margin-bottom: 20px;
 }
