@@ -1788,6 +1788,36 @@ body {
   border-bottom: 1px solid #000;
 }
 
+.badges {
+  position: relative;
+  z-index: 1;
+  height: 100%;
+  color: #fff;
+}
+.badges .badge {
+  position: absolute;
+  z-index: 1;
+  padding: 10px;
+}
+.badges .badge.top-right {
+  top: 0;
+  right: 0;
+}
+.badges .badge.bottom-left {
+  bottom: 0;
+  left: 0;
+}
+.badges .price {
+  padding: 3px 11px;
+  border: 2px solid #fff;
+  border-radius: 3px;
+}
+.badges svg {
+  width: 25px;
+  height: 25px;
+  fill: #fff;
+}
+
 .card {
   position: relative;
   z-index: 1;

@@ -1,4 +1,4 @@
-Primer v0.12.0
+Primer v0.12.1
 ===
 Last Updated: August 3, 2015
 
