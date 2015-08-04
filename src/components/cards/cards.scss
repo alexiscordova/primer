@@ -1,39 +1,51 @@
-// Cards Component
+// View Primer source: https://s3-us-west-2.amazonaws.com/s.cdpn.io/91494/primer.min.css
+// Commented-out code is an un-minified code representation.
+
+// Card component
 .card {
   position: relative;
   z-index: 1;
+  margin-bottom: $margin-small;
   width: 100%;
-  cursor: pointer;
   header {
     position: relative;
     z-index: 1;
     padding-top: 10px;
     padding-bottom: 15px;
-    border-top: 3px solid $tertiary10;
-    border-bottom: 3px solid $tertiary10;
   }
-  .events {
-    margin: 0;
-    padding: 0;
+  a {
+    display: block;
+    color: $tertiary10;
+    text-decoration: none;
   }
+
+  .performer-name {
+    color: $tertiary10;
+  }
+
   .event {
     display: block;
     padding-top: 10px;
     padding-bottom: 10px;
-    list-style: none;
     &:not(:last-child) {
       border-bottom: 1px solid $tertiary50;
     }
   }
   .event-details {
-    float: left;
     margin-left: 10px;
+    float: left;
     max-width: calc(100% - 90px);
+    width: 100%;
   }
-  .event-name {
+  .event-name,
+  .event-location {
     margin-bottom: 5px;
     line-height: 1;
   }
+  .event-ticket-info {
+    color: $secondary20;
+  }
+
   .date {
     float: left;
   }
@@ -46,16 +58,17 @@
   .event {
     padding: 0;
   }
-  .event-details:only-child {
-    max-width: 100%;
-    width: 100%;
-  }
-  .event-details:not(:only-child) {
+  .event-details {
     margin-left: 0;
-    max-width: calc(100% - 85px);
+    &:only-child {
+      float: none;
+      max-width: 100%;
+    }
+    &:not(:only-child) {
+      max-width: calc(100% - 85px);
+    }
   }
   .event-location {
-    @extend .event-name;
     color: $tertiary20;
   }
   .events-upcoming {
@@ -70,9 +83,8 @@
 .card.card-list {
   header {
     margin-bottom: 10px;
-  }
-  .event-ticket-info {
-    color: $secondary20;
+    border-top: 3px solid $tertiary10;
+    border-bottom: 3px solid $tertiary10;
   }
 }
 
@@ -84,7 +96,6 @@
     background-repeat: no-repeat;
     background-position: 0 0;
     background-size: cover;
-    border: none;
     &:before {
       position: absolute;
       z-index: -1;
@@ -96,9 +107,12 @@
       content: '';
     }
   }
+  a {
+    color: $true-white;
+  }
+
   .event {
     padding: 10px;
-    color: $true-white;
     background-color: $secondary20;
   }
 }

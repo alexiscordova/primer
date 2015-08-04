@@ -31,6 +31,19 @@ $h6-line-height: $base-line-height;
 
 $heading-font-weight: normal;
 
+// Placeholders
+%heading-bold {
+  font-family: $heading-bold-font-family;
+  font-weight: $heading-bold-font-weight;
+}
+
+%text-uppercase {
+  text-transform: uppercase;
+}
+
+%text-lowercase {
+  text-transform: lowercase;
+}
 
 html {
   font-family: $base-font-family;
@@ -59,8 +72,8 @@ h6,
 
 h4,
 .size-h4 {
-  @extend .text-uppercase;
-  @extend .heading-bold;
+  @extend %text-uppercase;
+  @extend %heading-bold;
 }
 
 // Body copy
@@ -141,14 +154,13 @@ strong,
 
 // This utility class should be used to emphasize headings
 .heading-bold {
-  font-family: $heading-bold-font-family;
-  font-weight: $heading-bold-font-weight;
+  @extend %heading-bold;
 }
 
 // Transform text regardless of their original state.
 .text-lowercase {
-  text-transform: lowercase;
+  @extend %text-lowercase;
 }
 .text-uppercase {
-  text-transform: uppercase;
+  @extend %text-uppercase;
 }

@@ -1,5 +1,10 @@
 // Global
 
+// Vertical rhythm variables
+$margin-small: 10px;
+$margin-medium: 20px;
+$margin-large: 30px;
+
 // box-sizing best practice
 // https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
 
@@ -141,4 +146,13 @@ body {
   right: 0;
   padding: 10px;
   cursor: pointer;
+}
+
+// List items
+.list-unstyled {
+  margin: 0;
+  padding: 0;
+  li {
+    list-style: none;
+  }
 }

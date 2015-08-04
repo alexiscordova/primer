@@ -6,6 +6,7 @@ $button-large: 15px 40px;
   display: inline-block;
   position: relative;
   z-index: 1;
+  margin-bottom: 10px;
   padding: $button-large;
   color: $primary30;
   font-size: $text-font-size;
@@ -36,12 +37,10 @@ $button-large: 15px 40px;
 .btn-primary {
   color: $true-white;
   background-color: $primary30;
-  border-bottom-color: rgba($true-black, 0.5);
   &:not([disabled]):hover {
     color: $true-white;
     background-color: $brand-primary;
     border-color: $brand-primary;
-    border-bottom-color: rgba($true-black, 0.5);
   }
   &:not([disabled]):active {
     background-color: darken($brand-primary, 10%);
@@ -53,17 +52,22 @@ $button-large: 15px 40px;
   color: $true-white;
   background-color: $secondary30;
   border-color: $secondary30;
-  border-bottom-color: rgba($true-black, 0.5);
   &:not([disabled]):hover {
     color: $true-white;
     background-color: $brand-secondary;
     border-color: $brand-secondary;
-    border-bottom-color: rgba($true-black, 0.5);
   }
   &:not([disabled]):active {
     background-color: darken($brand-secondary, 10%);
     border-color: darken($brand-secondary, 10%);
   }
+}
+
+.btn-primary,
+.btn-primary:not([disabled]):hover,
+.btn-cta,
+.btn-cta:not([disabled]):hover {
+  border-bottom-color: rgba($true-black, 0.5);
 }
 
 .btn-cta-secondary {

@@ -1,8 +1,9 @@
 // Inputs
 
-// Form Fields (text, email, password; )
+// Form Fields (text, email, password)
 .form-input {
   display: block;
+  margin-bottom: 10px;
   padding: 10px 15px;
   width: 100%;
   color: $tertiary40;
@@ -91,6 +92,7 @@ textarea.form-input {
 // Utility Classes
 .form-inline > [class*="form-"] {
   display: inline-block;
+  margin-bottom: 0;
   width: auto;
 }
 

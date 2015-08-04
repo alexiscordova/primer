@@ -6,6 +6,9 @@ $grid-gutters-md: 16px;
   .row {
     width: 100%;
     @include clearfix;
+    & + & {
+      margin-top: 20px;
+    }
   }
 
   [class*="column-"] {

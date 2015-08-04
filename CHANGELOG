@@ -1,3 +1,10 @@
+v0.13.0
+  date: 2015-08-10
+  changes:
+    - General cleanup
+    - Refactor cards
+    - Add vertical rhythm
+    - Add additional layout utility classes
 v0.12.1
   date: 2015-08-03
   change:

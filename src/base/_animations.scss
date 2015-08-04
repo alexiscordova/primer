@@ -109,7 +109,7 @@
 }
 
 .is-sliding-right {
-  animation: slideOutLeft 0.3s linear backwards;
+  animation: slideOutLeft 0.3s linear alternate-reverse;
 }
 
 
