@@ -15,7 +15,7 @@ module.exports = function(grunt) {
       dist: {
         expand: true,
         cwd: 'src',
-        src: ['fonts/*', 'svg/image-*.svg'],
+        src: ['fonts/**/*', 'svg/image-*.svg'],
         dest: 'dist/assets/'
       }
     },

@@ -1,3 +1,7 @@
+v0.13.2
+  date: 2015-08-10
+  changes:
+    - Update grunt script to include font files
 v0.13.1
   date: 2015-08-10
   changes:
