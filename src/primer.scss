@@ -12,14 +12,11 @@ $use-grids: true;
 // Utilities
 @import 'utilities/utilities';
 
-// Base
-@import 'base/base';
+// Atoms
+@import 'atoms/atoms';
 
-// Layout
-@import 'layouts/layouts';
+// Templates
+@import 'templates/templates';
 
-// Components
-@import 'components/components';
-
-// Themes
-// @import 'themes/themes';
+// Molecules
+@import 'molecules/molecules';

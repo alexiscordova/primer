@@ -1,8 +1,0 @@
-// Functions
-
-// rem-to-px – Takes a rem unit and converts it to pixels
-// Required parameter: $rem-value (e.g., 1.4rem)
-// Returns: Converted value in pixels (e.g., 14px)
-@function rem-to-px($rem-value) {
-  @return ($rem-value / 1rem) * 10px;
-}

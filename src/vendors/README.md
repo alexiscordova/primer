@@ -1,9 +1,9 @@
 Primer
 ===
 Vendors Documentation  
-Last Updated: July 9, 2015
+Last Updated: August 11, 2015
 
-The `vendors/` folder holds all the third-party libraries used in Primer. Each individual file, denoted by a prefixed underscore in the filename, is imported into `vendors.scss`, which is then imported into the main `primer.scss` file.
+The `vendors/` directory holds all the third-party libraries used in Primer. Each individual file is imported into `_vendors.scss`, which is then imported into the main `primer.scss` file.
 
 Third-party libraries in Primer are managed using [Bower](http://bower.io). Bower is a dependency manager that allows for easy adding and updating of all third-party libraries in a project. Similar to Grunt, Bower has a `bower.json` file that manages all the dependencies. **Bower is not required for your fork of Primer**, but it definitely makes dependency management easier; therefore, it is highly recommended.
 

@@ -32,7 +32,13 @@ module.exports = function(grunt) {
           sourcemap: 'none'
         },
         files: [
-          { 'dist/assets/css/primer.css': 'src/primer.scss' }
+          {
+            expand: true,
+            cwd: 'src/',
+            src: ['**/*.scss'],
+            dest: 'dist/assets/css/',
+            ext: '.css'
+          }
         ]
       }
     },

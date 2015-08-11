@@ -1,8 +1,8 @@
-Primer v0.13.1
+Primer v0.13.3
 ===
-Last Updated: August 10, 2015
+Last Updated: August 11, 2015
 
-Primer is a user-experience CSS framework for StubHub. Primer brings UI consistency to your application, creating a strong foundation for future interface innovations and brand updates.
+Primer is a user-experience CSS framework, based on a mixture of [SMACSS](https://smacss.com) and [Atomic Design](http://atomicdesign.bradfrost.com/chapter-2/), for StubHub. Primer brings UI consistency to your application, creating a strong foundation for future interface innovations and brand updates.
 
 Primer is designed to have a small footprint and be performant; modular, content-aware, responsive, and mobile first.
 
@@ -26,8 +26,8 @@ A few technologies are required to be installed to run Primer:
 
 - [node.js](https://nodejs.org/download/): Download and run the installer, which will install both node.js and npm. npm stands for node packaged modules and is a way to manage development dependencies through node.js.
 - [Ruby](https://www.ruby-lang.org/en/downloads/): If you're on a Mac, you can skip this step as Ruby is pre-installed with Mac OS X.
-- [Grunt](http://gruntjs.com): With node.js installed, `grunt-cli` can be installed with the command `npm install -g grunt-cli`.
-- [Bower](http://bower.io): Bower is a third-party dependency manager, and can be installed with the command `npm install -g bower`.
+- [Grunt](http://gruntjs.com): `grunt-cli` can be installed with the command `npm install -g grunt-cli`.
+- [Bower](http://bower.io): A third-party dependency manager, and can be installed with the command `npm install -g bower`.
 
 
 Installation
@@ -44,7 +44,7 @@ With the pre-requisites installed, you can now install Primer.
 
 Primer is now installed!
 
-####NPM Modules
+###npm Modules
 The command `npm install` installs a few node.js modules, mostly related to Grunt. All plugins are installed in the `node_modules` directory.
 
 - [`grunt-autoprefixer`](https://github.com/nDmitry/grunt-autoprefixer): Autoprefixer is a plugin searched the [caniuse](http://caniuse.com) database and automatically adds vendor prefixes based on your listed browser support.
@@ -66,9 +66,6 @@ Primer is tested and supported in the following browsers:
 
 **Note**: While Internet Explorer 9+ is supported, some features may require polyfills for certain versions.
 
-Contributions
----
-TBA
 
 Creators and Maintainers
 ---

@@ -1,3 +1,8 @@
+v0.13.3
+  date: 2015-08-10
+  changes:
+    - Change directory structure from SMACSS to Atomic Design
+    - Update documentation to reflect structural changes
 v0.13.2
   date: 2015-08-10
   changes:
