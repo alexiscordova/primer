@@ -679,6 +679,26 @@ textarea.form-input {
   border-color: #15ef55;
 }
 
+a {
+  display: inline-block;
+  color: #4d59a8;
+  text-decoration: none;
+}
+a:hover, a:focus {
+  text-decoration: underline;
+}
+a:active {
+  color: #f6891f;
+  text-decoration: underline;
+}
+
+a.dark {
+  color: #f6891f;
+}
+a.dark:active {
+  color: #7cd4d6;
+}
+
 @-webkit-keyframes bounceInDown {
   0%, 100%, 60%, 75%, 90% {
     transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);

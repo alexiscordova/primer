@@ -1,0 +1,21 @@
+// Links
+a {
+  display: inline-block;
+  color: $primary20;
+  text-decoration: none;
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
+  &:active {
+    color: $secondary30;
+    text-decoration: underline;
+  }
+}
+
+a.dark {
+  color: $secondary30;
+  &:active {
+    color: $primary40;
+  }
+}
