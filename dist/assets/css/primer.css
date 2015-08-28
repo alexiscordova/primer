@@ -985,6 +985,9 @@ a.dark:active {
   color: #0064b1;
   border-color: #0064b1;
 }
+.btn:hover {
+  text-decoration: none;
+}
 .btn:not(:last-child) {
   margin-right: 5px;
 }

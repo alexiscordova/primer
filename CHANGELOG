@@ -1,3 +1,7 @@
+v0.13.5
+  date: 2015-08-27
+  changes:
+    - Remove text-decoration for buttons
 v0.13.4
   date: 2015-08-14
   changes:

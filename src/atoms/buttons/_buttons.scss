@@ -29,6 +29,9 @@ $button-large: 15px 40px;
     color: $brand-primary;
     border-color: $brand-primary;
   }
+  &:hover {
+    text-decoration: none;
+  }
   &:not(:last-child) {
     margin-right: 5px;
   }
