@@ -3,7 +3,7 @@ Primer
 Modal Documentation  
 Last Updated: August 3, 2015
 
-##Modals
+## Modals
 Modal windows are overlays that appear to float above an underlying web page, offering additional information or options related to the current page without taking the user out of the intended flow. They most often offer either a confirmation (a single-primary button; e.g., “OK”) or a prompt (a primary and a default button; e.g., “Accept” and “Cancel”), along with a headline and accompaning descriptive text.
 
 ```html

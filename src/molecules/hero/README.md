@@ -3,7 +3,7 @@ Primer
 Hero Documentation  
 Last Updated: August 11, 2015
 
-##Hero
+## Hero
 The Hero molecule is a full-width image (100% of the viewport) that lives at the top of a page – typically Browse – just below the Global Header. The headline contains the name of the event for that specific page.
 
 The image for the hero molecule is programmatically added to the markup with an inline style of `background-image`. This allows for any amount of Hero images to be used throughout the site. Hero images on small viewports have a height of `180px` while Hero images on medium and large viewports have a height of `260px`.

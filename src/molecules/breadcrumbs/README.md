@@ -3,7 +3,7 @@ Primer
 Breadcrumbs Documentation  
 Last Updated: August 11, 2015
 
-##Breadcrumbs
+## Breadcrumbs
 The breadcrumb molecule is used to indicate the current page's location within a navigational hierarchy. Separators are added via `:before` pseudo element as a `background-image`.
 
 The last item (the current page) is automatically de-emphasized in comparison to the other pages in the hierarchy.

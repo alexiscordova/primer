@@ -11,10 +11,10 @@ Currently, the `utilities/` directory holds the following files:
 
 - `_mixins.scss`
 
-##Mixins
+## Mixins
 The `_mixins.scss` file contains all the mixins used within Primer.
 
-###clearfix
+### clearfix
 The `clearfix` mixin forces an element to self-clear its floated children. You can read more about the clearfix technique on [CSS-Tricks](https://css-tricks.com/snippets/css/clear-fix/).
 
 The mixin is applied to the parent of the floated item(s):
@@ -31,7 +31,7 @@ The mixin is applied to the parent of the floated item(s):
 
 Additionally, there is a `.clearfix` utility class you can use to apply the same technique.
 
-###breakpoint
+### breakpoint
 The `breakpoint` mixin allows for the creation of easy media queries. This mixin utilizes the `$breakpoints` Sass $map, which contains the allowed breakpoints.
 
 The required parameter, `$breakpoint`, refers to one of the three keys within the `$breakpoints` $map: small (mobile), medium (tablet), or large (desktop) (Because Primer is mobile first, usage of the "small" breakpoint is not required). In the event any other name is passed to the mixin, a Sass warning will appear in your Terminal. **Please note that this will not cause Sass compilation to fail.**
@@ -48,5 +48,5 @@ The required parameter, `$breakpoint`, refers to one of the three keys within th
 }
 ```
 
-###grid-setup and column-setup
+### grid-setup and column-setup
 The `grid-setup` mixin is the engine that builds out all the column combinations (including responsive classes) for the Primer grid system, while the `column-setup` mixin builds the column-specific code. Similarly to the `breakpoint` mixin, `grid-setup` uses the `$breakpoint` Sass map for media query creation. `column-setup` is called within the `grid-setup` mixin, and takes the `$i` and `$name` parameters created within `grid-setup`.

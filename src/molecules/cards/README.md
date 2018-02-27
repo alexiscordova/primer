@@ -3,12 +3,12 @@ Primer
 Cards Documentation  
 Last Updated: July 21, 2015
 
-##Cards
+## Cards
 Content cards are a convenient way to display events with its associated data – date, location, price, etc. Cards are four columns wide and generally not any smaller.
 
 Primer comes equipped with three distinct cards – Simple, List, and Hero – each with their own set of data and use cases.
 
-###Simple Card
+### Simple Card
 Simple cards are generally used to promote events at a specific location, rather than a specific event. For example, this card can be used to promote a specific venue which allows users to view events happening at that venue.
 
 ```html
@@ -29,7 +29,7 @@ Simple cards are generally used to promote events at a specific location, rather
 
 Simple cards require a location (e.g., “Nob Hill Masonic Auditorium”) and an event page which users can access by clicking the “Upcoming Events” link. An `85px` by `85px` image, while optional, is also recommended.
 
-###List Card
+### List Card
 List cards are generally used to display a group of similar events, such as events at a specific location or nearby events for a specific team or artist.
 
 ```html
@@ -59,7 +59,7 @@ List cards are generally used to display a group of similar events, such as even
 
 List cards require at least one event – any amount of events are allowed, but three events are recommended – as well as a header with a headline. Within the header, a subhead is optional but recommended. In the event there are more events than those listed in the list card, a see more button can be used to take the user to a browse page.
 
-###Hero Card
+### Hero Card
 Hero cards are generally used to highlight a specific event, artist, or venue.
 
 ```html

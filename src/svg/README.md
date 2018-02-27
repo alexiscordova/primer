@@ -5,7 +5,7 @@ Last Updated: July 29, 2015
 
 Primer comes equipped with an icon system to help enhance user-interface elements. All icons are `svg` and optimized using Grunt. There are two different groups of icons: icon-set icons and background-image icons.
 
-###Icon Set
+### Icon Set
 Icons in the set can be applied either inline, as the source for an `<img>`, or using the `grunt-svgstore` method. Each icon in the set has a default of `fill: $true-black;`, but can be modified via CSS.
 
 Icons currently in the set:
@@ -21,14 +21,14 @@ Icons currently in the set:
 - More
 - Remove
 
-###Background-Image Icons
+### Background-Image Icons
 When a `svg` is applied via `background-image`, the properties of that image cannot be changed with CSS. Because of this, specific icons, prefixed with `image-` have been included for certain components.
 
 Current background-image icons:
 
 - Caret Down/Left (Grey)
 
-###grunt-svgstore
+### grunt-svgstore
 [`grunt-svgstore`](https://github.com/FWeinb/grunt-svgstore) is a Grunt plugin that merges individual `svg` files from a folder. The merged file is then added to your `index.html` file, and each icon can be called by passing its name as the `xlink:href` parameter.
 
 For exaple, this is how one would use the Add icon:

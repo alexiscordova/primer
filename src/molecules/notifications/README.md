@@ -3,7 +3,7 @@ Primer
 Notifications Documentation  
 Last Updated: July 24, 2015
 
-##Notifications
+## Notifications
 Notifications are message banners that are used to display global information, such as confirmation messages and alerts.
 
 Notifications have two state types: error and success. With each type, there is an associated utility class – `.is-unsuccessful` and `.is-successful`, respectively – which will apply the proper styling for the state.
